@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -13,13 +16,17 @@
         
     </div>
     <div class="block__content">
-        <h1>Письмо деду морозу</h1>
+        <h1 class="block__title">Письмо деду морозу</h1>
         <form action="#" class="block__form">
             <input required placeholder="Ваше имя" name="name" type="text" class="block__input">
             <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="block__input">
-            <textarea required placeholder="Твое письмо" name="textarea" cols="30" rows="10"></textarea>
-            <button class="btn btn__form">Перезвонить мне</button>
+            <textarea required placeholder="Твое письмо" name="textarea" class="block__textarea"></textarea>
+            <button class="btn btn__form">Отправить письмо</button>
         </form>
+    </div>
+
+    <div class="modal">
+        <div class="modal__dialog"></div>
     </div>
 
     
